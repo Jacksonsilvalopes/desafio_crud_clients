@@ -26,7 +26,7 @@ public class ClientResponseDTO {
         @DecimalMin(value = "0.0", inclusive = false)
         private Double income;
 
-        @NotNull
+        @NotNull(message = "LocalDate cannot be null")
         @PastOrPresent(message = "It cannot be a future date")
         private LocalDate birthDate;
 
