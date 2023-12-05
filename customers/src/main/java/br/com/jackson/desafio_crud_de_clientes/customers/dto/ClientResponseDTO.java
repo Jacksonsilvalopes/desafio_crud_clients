@@ -31,8 +31,8 @@ public class ClientResponseDTO {
         private LocalDate birthDate;
 
         @NotNull(message = "Children cannot be null")
-        @PositiveOrZero
-        private Integer children;
+        @PositiveOrZero(message = "Must be greater than or equal to 0")
+        private Integer children;        
 
 
 }
